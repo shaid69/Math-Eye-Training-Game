@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fbe7;
+    color: #37474f;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #4db6ac;
+    color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #00796b;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    margin: 1rem;
+    background-color: #26a69a;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #00796b;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none;
+}
+
+#training-area {
+    margin-top: 2rem;
+}
+
+.exercise {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #80cbc4;
+    border-radius: 10px;
+    background-color: #e0f2f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mcq-option {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    background-color: #e0f2f1;
+    border: none;
+    border-radius: 30px;
+    color: #00796b;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mcq-option:hover {
+    background-color: #b2dfdb;
+    transform: translateY(-2px);
+}
+
+.feedback {
+    font-size: 1.2rem;
+    color: #00796b;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#score, #timer {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}

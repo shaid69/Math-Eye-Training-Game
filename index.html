@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Eye Training Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Math Eye Training Game</h1>
+        <p>Sharpen your math skills with interactive exercises!</p>
+    </header>
+    <main>
+        <div class="level-selection">
+            <h2>Select a Game Mode</h2>
+            <div class="buttons">
+                <button onclick="startGame('easy')" class="btn">Easy</button>
+                <button onclick="startGame('medium')" class="btn">Medium</button>
+                <button onclick="startGame('hard')" class="btn">Hard</button>
+                <button onclick="startGame('extreme')" class="btn">Extreme</button>
+            </div>
+        </div>
+        <div id="training-area" class="hidden">
+            <h3 id="level-title"></h3>
+            <div id="exercise" class="exercise"></div>
+            <div id="mcq-options" class="hidden">
+                <button class="mcq-option" onclick="selectOption('A')">A</button>
+                <button class="mcq-option" onclick="selectOption('B')">B</button>
+                <button class="mcq-option" onclick="selectOption('C')">C</button>
+            </div>
+            <div id="feedback" class="feedback hidden"></div>
+            <p id="score">Score: <span id="score-value">0</span></p>
+            <p id="timer">Time Left: <span id="time-left">30</span>s</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Math Eye Training Game. All Rights Reserved. Created by Shaid Mahamud</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
